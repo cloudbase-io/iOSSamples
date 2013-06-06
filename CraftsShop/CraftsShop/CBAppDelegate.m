@@ -24,9 +24,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Initialize the CBHelper object
-    self.helper = [[CBHelper alloc] initForApp:@"test-crafts-shop" withSecret:@"02a0d3f6e2a6b5f4cb28e134571f1f37"];
-    self.helper.debugMode = YES;
-    [self.helper setPassword:@"cbc06180efdc9db4ac573c99c224405f"];
+    self.helper = [[CBHelper alloc] initForApp:@"your-application-code" withSecret:@"app-secret-code"];
+    [self.helper setPassword:@"app-password-md5"];
     
     self.cart = [[NSMutableArray alloc] init];
     
